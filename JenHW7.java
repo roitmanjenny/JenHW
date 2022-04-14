@@ -24,6 +24,10 @@ public class JenHW7 {
         Scanner s4 = new Scanner(System.in);
         String number = s4.next();
         LogSingletone.writetofile(number);
-        
+
+        //3
+        CarFactory carFactory = new CarFactory();
+        Drivable car1 = CarFactory.getCar("gyrtryer");
+        car1.drive();
     }
 }
